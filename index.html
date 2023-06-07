@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+    <!--  <link rel="stylesheet" href="styles/debug.css"> -->
+
+    <style>
+        @media (max-width: 1023px) {
+            #col-flex {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            #col-pad {
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 444px) {
+            #first {
+                padding: 0.70rem !important;
+            }
+        }
+
+        .navbar-menu .navbar-item a:hover {
+            color: hsl(35, 77%, 62%) !important;
+        }
+
+        #fdp {
+            background-color: hsl(5, 85%, 63%);
+            transition: 0.1s ease;
+        }
+
+        #fdp:hover {
+            background-color: hsl(240, 100%, 5%);
+        }
+
+        #change {
+            padding: 0rem 0.75rem 0.75rem 0rem !important;
+        }
+        
+        @media (max-width: 768px) {
+            #change-mobible {
+                padding: 0rem 0rem 0.75rem 0rem;
+            }
+            
+            #margin {
+                margin: 0rem!important;
+            }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="section">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="#" class="navbar-item">
+                        <img src="assets/images/logo.svg" alt="logo">
+                    </a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item pr-5">
+                            <a href="#" class="has-text-black">Home</a>
+                        </div>
+                        <div class="navbar-item pr-5">
+                            <a href="#" class="has-text-black">New</a>
+                        </div>
+                        <div class="navbar-item pr-5">
+                            <a href="#" class="has-text-black">Popular</a>
+                        </div>
+                        <div class="navbar-item pr-5">
+                            <a href="#" class="has-text-black">Trending</a>
+                        </div>
+                        <div class="navbar-item pr-5">
+                            <a href="#" class="has-text-black">Categories</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <section class="section is-fullheight">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-full is-flex-tablet">
+                    <div id="change change-mobible" class="column is-9">
+                        <div id="change change-mobible" class="column">
+                            <figure class="image">
+                                <img src="assets/images/image-web-3-desktop.jpg" alt="" >
+                            </figure>
+                        </div>
+                        <div class="column is-flex-tablet">
+                            <div class="column">
+                                <h1 class="title is-size-1 is-size-2-mobile has-text-left-mobile has-text-weight-bold has-text-left">
+                                    The Bright Future of Web 3.0?
+                                </h1>
+                            </div>
+                            <div id="margin"  class="column is-flex is-flex-direction-column is-justify-content-space-between ml-6">
+                                <p id="margin" class="mb-6">We dive into the next evolution of the web that claims to put the power of the platforms bacl into the hands of the people. But is it really fulfilling its promise?</p>
+                                <button id="fdp" class="button has-text-white has-text-weight-semibold px-5 block">READ MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column has-background-black is-flex is-flex-direction-column is-justify-content-space-evenly">
+                        <a class="is-size-2 is-size-3-mobile has-text-weight-bold has-text-orange ml-2 mb-3" style="color: hsl(35, 77%, 62%);">New</a>
+                        <a class="is-size-5 has-text-white -has-text-weight-semibol ml-2 mb-1">Hydrogen VS Electric Cars</a>
+                        <p class="ml-2" style="font-size: 15px; color: hsl(233, 8%, 79%);">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                        <hr>
+                        <a class="is-size-5 has-text-white -has-text-weight-semibol ml-2 mb-1">Hydrogen VS Electric Cars</a>
+                        <p class="ml-2" style="font-size: 15px; color: hsl(233, 8%, 79%);">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                        <hr>
+                        <a class="is-size-5 has-text-white -has-text-weight-semibol ml-2 mb-1">Hydrogen VS Electric Cars</a>
+                        <p class="ml-2" style="font-size: 15px; color: hsl(233, 8%, 79%);">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-flex">
+                    <figure class="image is-128x128 mb-6">
+                        <img src="assets/images/image-retro-pcs.jpg" alt="">
+                    </figure>
+                    <div class="column is-flex is-flex-direction-column is-justify-content-space-between" style="padding-top: 0rem; padding-bottom: 0rem;">
+                        <h3 class="title">01</h3>
+                        <h4 class="subtitle is-size-5">Reviving Retro PCs</h4>
+                        <p>What happens when old PCs are given modern upgrades?</p>
+                    </div>
+                </div>
+                <div class="column is-flex">
+                    <figure class="image is-128x128 mb-6">
+                        <img src="assets/images/image-top-laptops.jpg" alt="">
+                    </figure>
+                    <div class="column is-flex is-flex-direction-column is-justify-content-space-between" style="padding-top: 0rem; padding-bottom: 0rem;">
+                        <h3 class="title">02</h3>
+                        <h4 class="subtitle is-size-5">Top 10 Laptops of 2022</h4>
+                        <p>Our best picks for various needs and budgets.</p>
+                    </div>
+                </div>
+                <div class="column is-flex">
+                    <figure class="image is-128x128 mb-6">
+                        <img src="assets/images/image-gaming-growth.jpg" alt="">
+                    </figure>
+                    <div class="column is-flex is-flex-direction-column">
+                        <h3 class="title">03</h3>
+                        <h4 class="subtitle is-size-5">The Growth of Gaming</h4>
+                        <p>How the pandemic has sparked fresh opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
